@@ -14,13 +14,44 @@
                 background-attachment: fixed;
                 background-size: cover;
             } 
+            a.class1 {
+                color:#ffff00;
+            }
+            a.class1:link  {
+                text-decoration: underline; color: #ffff00;
+            }
+            a.class1:visited {
+                text-decoration: underline; color: #ffff00;
+            }
+            a.class1:hover {
+                text-decoration: underline; color: #ffff00;
+            }
+            a.class1:active {
+                text-decoration: underline; color: #666666;
+            }
+
+            a.class2 {
+                  color:#ffffff;
+            }
+            a.class2:link  {
+                text-decoration: underline; color: #ffffff;
+            }
+            a.class2:visited {
+                text-decoration: underline; color: #ffffff;
+            }
+            a.class2:hover {
+                text-decoration: underline; color: #ffffff;
+            }
+            a.class2:active {
+                text-decoration: underline; color: #666666;
+            }
         </style>
         <script>
 
         </script>
     </head>
     <body background color="#000000" text="#ffffff" link="#ffffff" alink="#666666" vlink="#ffffff">
-        <h1 align="right">About <span style="color: #ffff00"><a href="index.html">Dean Newhart</a></span></h1>
+        <h1 align="right">About <a href="index.html" class="class1">Dean Newhart</a></h1>
         <p id="bio" align="right"></p>
         <script>
             let el = document.getElementById("bio")
