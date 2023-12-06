@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dean Newhart / Bio
+        </title>
+        <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-image: url('Images/081123-105424-EDIT.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            } 
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body background color="#000000" text="#ffffff" link="#ffffff" alink="#666666" vlink="#ffffff">
+        <h1 align="right">About <a href="index.html">Dean Newhart</a></h1>
+        <p id="bio" align="right"></p>
+        <script>
+            let el = document.getElementById("bio")
+                const bios = [
+                "Dean Newhart gets your jokes.",
+                "Dean Newhart just wants to listen.",
+                "Dean Newhart wants what you want.",
+                "Dean Newhart has what it doesn&#39;t take.",
+                "Dean Newhart can do it yourself.",
+                "Dean Newhart is shaking a leg.",
+                "Dean Newhart is OK.",
+                "Dean Newhart used to be friends.",
+                "Dean Newhart isn&#39;t too bad.",
+                "Dean Newhart is almost ready.",
+                "Dean Newhart gets better.",
+                "Dean Newhart tells it like it was.",
+                "Dean Newhart gets used to it.",
+                "Dean Newhart is compatible with your device.",
+                "Dean Newhart doesn&#39;t know any better.",
+                "Dean Newhart greases every wheel.",
+                "Dean Newhart could've sworn.",
+                "Dean Newhart is on limits.",
+                "Dean Newhart can be bothered.",
+                "Dean Newhart is on the lookout.",
+                "Dean Newhart can handle it.",
+                "Dean Newhart has fun.",
+                "Dean Newhart&#39;s needs are few.",
+                "Dean Newhart is what you make of him.",
+                "Dean Newhart sees for himself.",
+                "Dean Newhart raises the grain.",
+                "Dean Newhart can even.",
+                "Dean Newhart is fit to be untied.",
+                "Dean Newhart is in the details.",
+                "Dean Newhart is useful.",
+                "Dean Newhart can't help it.",
+                "Dean Newhart knows the words.",
+                "Dean Newhart writes it down.",
+                "Dean Newhart is the one-armed sea captain of the air."
+            ];
+            function getBiography() {
+            var x = Math.floor(Math.random() * bios.length);
+            return bios[x];
+            }
+            el.innerHTML = getBiography();
+        </script>
+    </body>
+</html>

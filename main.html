@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Words and music in Portland, Oregon.">
+    <title>Dean Newhart
+    </title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('Images/081123-104757.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    } 
+    button.link {
+        background: none!important;
+        border: none;
+        padding: 0!important;
+        /*optional*/
+        font-family: arial, sans-serif;
+        /*input has OS specific font-family*/
+        color: #ffffff;
+        font-size: 16px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    </style>
+    </head>
+<body background color="#000000" text="#ffffff" link="#ffffff" alink="#666666" vlink="#ffffff">
+<h1 align="right">Dean Newhart</h1>
+<p align="right"><a href="player.html">LISTEN</a></p>
+<p align="right"><a href="gallery.html">LOOK</a></p>
+<p align="right"><a href="bio.html">READ</a></p>
+<p align="right"><a href="tel:5032084034">TALK</a></p>
+<p align="right"><a href="mailto:dean.oldhart@gmail.com">WRITE</a></p>
+<p align="right"><a href="calendar.html">GO</a></p>
+<p align="right"><button class="link" id="press" type="button" onclick='document.getElementById("press").innerHTML = "PRESS AGAIN"'>PRESS</button></p>
+<script>
+    onload = init;
+function init() {
+var onclick = clickUpdates();
+var btn = document.getElementById("press");
+btn.addEventListener("click", onclick, false);
+}
+function clickUpdates() {
+var count = 0;
+var next = function() {
+    switch(count) {
+        case 0:
+        // function click 1 here
+        document.getElementById("press").innerHTML = "PRESS AGAIN";
+        break;
+        case 1:
+        // function click 2 here
+        document.getElementById("press").innerHTML = "KEEP ON PRESSING";
+        break;
+        case 2:
+        // function click 3 here
+        document.getElementById("press").innerHTML = "KEEP ON PRESSING";
+        
+        case 3:
+        // function click 4 here
+        window.location='https://thebaffler.com/authors/liz-pelly';  
+    }
+    count = count<5?count+1:5;
+}
+return next;
+}
+</script>
+</body>
+</html>
